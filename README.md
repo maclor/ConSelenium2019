@@ -121,7 +121,7 @@ Go to [download page](https://www.jetbrains.com/idea/download/#section=windows),
 Run IntelliJ IDEA. On home screen select ``Check out from version control`` and then select git:
 ![idea home screen](images/idea_home.png)
 
-When you will be asked for repository url add enter ``git@github.com:maclor/QualityExcites2018.git``, then clone repository. IDE will ask if you want to create project basing on the downloaded sources, accept this. You should see screen like this:
+When you will be asked for repository url add enter ``git@github.com:maclor/ConSelenium2019.git``, then clone repository. IDE will ask if you want to create project basing on the downloaded sources, accept this. You should see screen like this:
 ![idea import project](images/idea_import_project.PNG)
 
 Please select options like on screenshot - iport project from external model and select maven. In next steps you will see screen like this one:
