@@ -138,12 +138,21 @@ When project is properly imported please click icon in bottom left corner and se
 
 # Selenium grid servers
 51.83.73.57:4444 vnc: 5900
+
 51.83.73.57:4445 vnc: 5901
+
 51.83.73.57:4446 vnc: 5902
+
 51.83.73.57:4447 vnc: 5903
+
 51.83.73.57:4448 vnc: 5904
+
 51.83.73.57:4449 vnc: 5905
+
 51.83.73.57:4450 vnc: 5906
+
 51.83.73.57:4451 vnc: 5907
+
 51.83.73.57:4452 vnc: 5908
+
 51.83.73.57:4453 vnc: 5909
