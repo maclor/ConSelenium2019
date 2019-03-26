@@ -55,8 +55,8 @@ If you are familiarized with any of VNC viewers please use your favorite one. If
 Open command line (click start menu and type cmd) and run following commands:
 ```
 docker network create grid
-docker run -d -p 4444:4444 --net grid --restart=always --name selenium-hub selenium/hub:3.141.59-cobalt
-docker run -d -p 5900:5900 --net grid -e HUB_HOST=selenium-hub --shm-size 2g --restart=always --name selenium-node selenium/node-firefox-debug:3.141.59-cobalt
+docker run -d -p 4444:4444 --net grid --restart=always --name selenium-hub selenium/hub:3.141.59
+docker run -d -p 5900:5900 --net grid -e HUB_HOST=selenium-hub --shm-size 2g --restart=always --name selenium-node selenium/node-firefox-debug:3.141.59
 ```
 If everything is ok you can try to connect via VNC to node. Use ``localhost::5900`` as address and ``secret`` as a password. If everything is ok you should see node's desktop.
 Connection screen with TightVNC Viewer:
@@ -134,7 +134,16 @@ When project import will be done, please open IntelliJ IDEA settings (if you don
 ![idea setting maven](images/idea_setting_maven.PNG)
 
 Please change _Maven home directory_ - click _..._ and select maven path (this one which you have installed).
-When project is properly imported please click icon in bottom left corner and select _Maven projects_. On the right side _Maven projects_ menu will appear. Expand _lifecycle_ and double click _verify_. On the bottom of window terminal will appear. In this window you can track test progress. In VNC window you should be able to see running test. If you don't use docker then firefox window should appear. If test runs and reslt is ok, then you have configured everythign properly :) Well done!
+When project is properly imported please click icon in bottom left corner and select _Maven projects_. On the right side _Maven projects_ menu will appear. Expand _lifecycle_ and double click _verify_. On the bottom of window terminal will appear. In this window you can track test progress. In VNC window you should be able to see running test. If you don't use docker then firefox window should appear. If test runs and reslt is ok, then you have configured everything properly :) Well done!
 
-# Backup grid servers
-Will be added
+# Selenium grid servers
+51.83.73.57:4444 vnc: 5900
+51.83.73.57:4445 vnc: 5901
+51.83.73.57:4446 vnc: 5902
+51.83.73.57:4447 vnc: 5903
+51.83.73.57:4448 vnc: 5904
+51.83.73.57:4449 vnc: 5905
+51.83.73.57:4450 vnc: 5906
+51.83.73.57:4451 vnc: 5907
+51.83.73.57:4452 vnc: 5908
+51.83.73.57:4453 vnc: 5909
