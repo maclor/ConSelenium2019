@@ -8,11 +8,10 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("/index.php?controller=order")
 public class CartPage extends PageObject {
 
-
-    @FindBy(className = "product-name")
+    @FindBy(css = "#order-detail-content .product-name")
     private WebElementFacade productName;
 
     public String getProductName() {
-      return productName.getText();
+        return productName.getText();
     }
 }

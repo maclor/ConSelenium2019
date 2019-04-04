@@ -1,9 +1,11 @@
 package pl.maclor.conselenium2019.pages;
 
+import lombok.Getter;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
+import pl.maclor.conselenium2019.pages.box.ConfirmationBox;
 
 @DefaultUrl("/index.php?id_product=1&controller=product")
 public class ProductPage extends PageObject {
@@ -13,6 +15,9 @@ public class ProductPage extends PageObject {
 
     @FindBy(xpath = "//*[@itemprop='name']")
     private WebElementFacade productName;
+
+    @Getter
+    private ConfirmationBox confirmationBox;
 
     public void clickAddToCart() {
         addToCartButton.click();

@@ -23,6 +23,7 @@ public class AddingToCartFeatures {
     public void heAddProductToCart() {
         productName = productPage.getProductName();
         productPage.clickAddToCart();
+        productPage.getConfirmationBox().waitForPresent();
     }
 
     @Then("^this product should be added to cart$")
