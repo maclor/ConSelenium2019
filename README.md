@@ -162,3 +162,11 @@ When project is properly imported please click icon in bottom left corner and se
 51.83.73.57:4455 vnc: 5911
 
 51.83.73.57:4456 vnc: 5912
+
+# Lombok annotations processing in IntelliJ IDEA
+Before Lombok installation you should enable annotation processing.
+```
+File -> Settings -> Build, Execution, Deployment -> Compiler -> Annotation Processors
+File -> Other settings -> Default settings -> Build, Execution, Deployment -> Compiler -> Annotation Processors
+```
+Then install lombok plugin. If you have already installed plugin please reinstall it after enabling annotation processors.
