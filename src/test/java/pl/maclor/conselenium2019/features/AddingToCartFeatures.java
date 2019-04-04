@@ -14,9 +14,19 @@ public class AddingToCartFeatures {
 
     private String productName;
 
-    @Given("^customer is on product page$")
-    public void customerIsOnProductPage() {
-        productPage.open();
+    @Given("^customer is on (product|main|category) page$")
+    public void customerIsOnProductPage(String page) {
+        switch (page) {
+            case "product":
+                productPage.open();
+                break;
+            case "main":
+                mainPage.open();
+                break;
+            case "category":
+                categoryPage.open();
+                break;
+        }
     }
 
     @When("^he add product to cart$")
