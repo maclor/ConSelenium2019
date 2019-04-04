@@ -1,4 +1,4 @@
-package pl.maclor.conselenium2019.features.cart;
+package pl.maclor.conselenium2019.features;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;

@@ -1,4 +1,4 @@
-package pl.maclor.conselenium2019.steps.login;
+package pl.maclor.conselenium2019.steps;
 
 import pl.maclor.conselenium2019.pages.SearchPage;
 

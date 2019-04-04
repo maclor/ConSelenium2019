@@ -1,4 +1,4 @@
-package pl.maclor.conselenium2019.features.cart;
+package pl.maclor.conselenium2019.features;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,7 +7,7 @@ import net.thucydides.core.annotations.Steps;
 import org.assertj.core.api.SoftAssertions;
 import pl.maclor.conselenium2019.pages.ResultsPage;
 import pl.maclor.conselenium2019.pages.SearchPage;
-import pl.maclor.conselenium2019.steps.login.GoogleSteps;
+import pl.maclor.conselenium2019.steps.GoogleSteps;
 
 public class GoogleFeatures {
 
