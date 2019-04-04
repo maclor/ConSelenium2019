@@ -137,7 +137,7 @@ Please change _Maven home directory_ - click _..._ and select maven path (this o
 When project is properly imported please click icon in bottom left corner and select _Maven projects_. On the right side _Maven projects_ menu will appear. Expand _lifecycle_ and double click _verify_. On the bottom of window terminal will appear. In this window you can track test progress. In VNC window you should be able to see running test. If you don't use docker then firefox window should appear. If test runs and reslt is ok, then you have configured everything properly :) Well done!
 
 # Selenium grid servers
-51.83.73.57:4444 vnc: 5900
+~~51.83.73.57:4444 vnc: 5900~~
 
 51.83.73.57:4445 vnc: 5901
 
@@ -149,10 +149,16 @@ When project is properly imported please click icon in bottom left corner and se
 
 51.83.73.57:4449 vnc: 5905
 
-51.83.73.57:4450 vnc: 5906
+~~51.83.73.57:4450 vnc: 5906~~
 
 51.83.73.57:4451 vnc: 5907
 
 51.83.73.57:4452 vnc: 5908
 
 51.83.73.57:4453 vnc: 5909
+
+51.83.73.57:4454 vnc: 5910
+
+51.83.73.57:4455 vnc: 5911
+
+51.83.73.57:4456 vnc: 5912
