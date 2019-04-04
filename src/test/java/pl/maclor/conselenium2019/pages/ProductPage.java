@@ -11,7 +11,14 @@ public class ProductPage extends PageObject {
     @FindBy(css = "#add_to_cart button")
     private WebElementFacade addToCartButton;
 
+    @FindBy(xpath = "//*[@itemprop='name']")
+    private WebElementFacade productName;
+
     public void clickAddToCart() {
         addToCartButton.click();
+    }
+
+    public String getProductName() {
+        return productName.getText();
     }
 }
