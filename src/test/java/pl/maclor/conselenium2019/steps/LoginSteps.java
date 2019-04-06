@@ -8,7 +8,7 @@ public class LoginSteps {
     private LoginPage loginPage;
 
     @Step
-    public void login(String email, String password) {
+    public void login(final String email, final String password) {
         loginPage.enterEmail(email);
         loginPage.enterPassword(password);
         loginPage.clickLogin();

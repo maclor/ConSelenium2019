@@ -3,6 +3,7 @@ package pl.maclor.conselenium2019.features;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pl.maclor.conselenium2019.exceptions.InvalidTestStateException;
 import pl.maclor.conselenium2019.pages.CartPage;
 import pl.maclor.conselenium2019.pages.CategoryPage;
 import pl.maclor.conselenium2019.pages.MainPage;
@@ -19,7 +20,7 @@ public class AddingToCartFeatures {
     private String productName;
 
     @Given("^customer is on (product|main|category) page$")
-    public void customerIsOnProductPage(String page) {
+    public void customerIsOnProductPage(final String page) {
         switch (page) {
             case "product":
                 productPage.open();
@@ -30,6 +31,8 @@ public class AddingToCartFeatures {
             case "category":
                 categoryPage.open();
                 break;
+            default:
+                throw new InvalidTestStateException();
         }
     }
 

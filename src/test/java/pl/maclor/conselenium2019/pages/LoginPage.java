@@ -17,11 +17,11 @@ public class LoginPage extends PageObject {
     @FindBy(id = "SubmitLogin")
     private WebElementFacade loginButton;
 
-    public void enterEmail(String email) {
+    public void enterEmail(final String email) {
         emailInput.type(email);
     }
 
-    public void enterPassword(String password) {
+    public void enterPassword(final String password) {
         passwordInput.type(password);
     }
 
