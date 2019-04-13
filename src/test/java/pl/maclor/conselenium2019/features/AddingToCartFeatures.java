@@ -3,6 +3,7 @@ package pl.maclor.conselenium2019.features;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pl.maclor.conselenium2019.domain.Product;
 import pl.maclor.conselenium2019.exceptions.InvalidTestStateException;
 import pl.maclor.conselenium2019.pages.CartPage;
 import pl.maclor.conselenium2019.pages.CategoryPage;
@@ -17,7 +18,7 @@ public class AddingToCartFeatures {
     private MainPage mainPage;
     private CategoryPage categoryPage;
 
-    private String productName;
+    private Product product;
 
     @Given("^customer is on (product|main|category) page$")
     public void customerIsOnProductPage(final String page) {
@@ -38,7 +39,7 @@ public class AddingToCartFeatures {
 
     @When("^he adds product to cart$")
     public void heAddProductToCart() {
-        productName = productPage.getProductName();
+        product = productPage.getProduct();
         productPage.clickAddToCart();
         productPage.getConfirmationBox().waitForPresent();
     }
@@ -46,7 +47,7 @@ public class AddingToCartFeatures {
     @Then("^this product should be added to cart$")
     public void thisProductShouldBeAddedToCart() {
         cartPage.open();
-        assertThat(cartPage.getProductName()).isEqualTo(productName);
+        assertThat(cartPage.getProducts()).containsOnly(product);
     }
 
     @When("^he adds product to cart from popover$")
