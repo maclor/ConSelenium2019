@@ -15,16 +15,16 @@ public class LoginFeatures {
 
     @Given("^user is on login page$")
     public void isOnLoginPage() {
-        loginPage.open();
+
     }
 
     @When("^he enters valid username and invalid password$")
     public void heEntersValidUsernameAndInvalidPassword() {
-        loginSteps.login("valid", "invalid");
+
     }
 
     @When("^he enters valid credentials$")
     public void heEntersValidCredentials() {
-        loginSteps.login("valid", "valid");
+
     }
 }

@@ -1,3 +1,4 @@
+@TID1001REV0.3.0
 Feature: User should be able to secure his account
 
   Background:

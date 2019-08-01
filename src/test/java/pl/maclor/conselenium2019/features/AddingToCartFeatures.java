@@ -22,37 +22,20 @@ public class AddingToCartFeatures {
 
     @Given("^customer is on (product|main|category) page$")
     public void customerIsOnProductPage(final String page) {
-        switch (page) {
-            case "product":
-                productPage.open();
-                break;
-            case "main":
-                mainPage.open();
-                break;
-            case "category":
-                categoryPage.open();
-                break;
-            default:
-                throw new InvalidTestStateException();
-        }
     }
 
     @When("^he adds product to cart$")
     public void heAddProductToCart() {
-        product = productPage.getProduct();
-        productPage.clickAddToCart();
-        productPage.getConfirmationBox().waitForPresent();
+
     }
 
     @Then("^this product should be added to cart$")
     public void thisProductShouldBeAddedToCart() {
-        cartPage.open();
-        assertThat(cartPage.getProducts()).containsOnly(product);
+
     }
 
     @When("^he adds product to cart from popover$")
     public void heAddsProductToCartFromPopover() {
-        mainPage.moveMouseOverProduct();
-        mainPage.clickAddToCart();
+
     }
 }
