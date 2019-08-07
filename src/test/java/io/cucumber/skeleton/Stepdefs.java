@@ -38,4 +38,19 @@ public class Stepdefs {
     @Then("this product should be added to cart")
     public void thisProductShouldBeAddedToCart() {
     }
+
+    @Given("logged in user")
+    public void loggedInUser() {
+
+    }
+
+    @When("he logs out")
+    public void heLogsOut() {
+
+    }
+
+    @Then("his account should be secured")
+    public void hisAccountShouldBeSecured() {
+
+    }
 }
