@@ -37,6 +37,6 @@ public class Stepdefs {
 
     @Then("this product should be added to cart")
     public void thisProductShouldBeAddedToCart() {
-
+        throw new RuntimeException();
     }
 }
