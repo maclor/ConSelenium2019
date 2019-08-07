@@ -24,4 +24,19 @@ public class Stepdefs {
     @Then("he is logged in")
     public void heIsLoggedIn() {
     }
+
+    @Given("customer is on product page")
+    public void customerIsOnProductPage() {
+
+    }
+
+    @When("he adds product to cart")
+    public void heAddsProductToCart() {
+
+    }
+
+    @Then("this product should be added to cart")
+    public void thisProductShouldBeAddedToCart() {
+
+    }
 }
