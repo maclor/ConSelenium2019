@@ -51,6 +51,6 @@ public class Stepdefs {
 
     @Then("his account should be secured")
     public void hisAccountShouldBeSecured() {
-
+        throw new RuntimeException();
     }
 }
